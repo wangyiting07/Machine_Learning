@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yiting Wang</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans=sans-serif;
+        line-height: 25px;
+      }
+      /*Style the header*/
+      .header{
+        padding: 300px;
+        text-align: center;
+        background-color: #000000;
+        background-image: url(images/ml.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+        color: black;
+      }
+      /* Increase the font size of the h1 element */
+      .header h1 {
+          font-size: 50px;
+      }
+  
+      /* Style the top navigation bar */
+      .navbar {
+          overflow: hidden;
+          background-color: #333;
+          position: fixed;
+          top:0;
+          width: 100%;
+      }
+      /* Style the navigation bar links */
+      .navbar a {
+          float: left;
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 20px;
+          text-decoration: none;
+      }
+
+      /* Right-aligned link */
+      .navbar a.right {
+          float: right;
+      }
+
+      /* Change color on hover */
+      .navbar a:hover {
+          background-color: #ddd;
+          color: black;
+      }
+      /* Column container */
+      .row {  
+          /*clear: both;*/
+          display: inline-flex;
+          /*flex-wrap: wrap;*/
+          width: 100%;
+      }
+
+      /* Create two unequal columns that sits next to each other */
+      /* Sidebar/left column */
+      .side {
+          flex: 30%;
+          background-color: #f1f1f1;
+          padding: 20px;
+      }
+    
+
+      /* Main column */
+      .main {   
+          flex: 70%;
+          background-color: white;
+          padding: 20px;
+      }
+
+      /* Fake image, just for this example */
+      .fakeimg {
+          background-color: #aaa;
+          width: 100%;
+          padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Machine Learning Section</h1>
+      <p>A place to collect what I learned.</p>
+    </div>
+    <!-- <img src="images/pets.jpg" alt="My test image"> -->
+    <div class="navbar">
+      <a href="file:///C:/Users/grace/Desktop/web/test-site/ML.html#">ML</a>
+      <a href="#">Basic</a>
+      <a href="file:///C:/Users/grace/Desktop/web/test-site/Robotic.html#">Robotic</a>
+      <a href="#">C++</a>
+      <a href="file:///C:/Users/grace/Desktop/web/test-site/index.html#" class="right">Home</a>
+    </div>
+
+    <div class="row">
+      <div class="side">
+          <h2>Content</h2>
+          <h4>Tips</h4>
+
+      </div>
+      <div class="main">
+          <h2>Tips</h2>
+          <h4>Some practical tips</h4>
+          <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+          <p>
+            <ul style="list-style-type:square">
+              <li>Regularizer controls the model complexity</li>
+                <ul style="list-style-type:circle">
+                  <li>Lambda is larger --> regulate more --> model is more simple</li>
+                </ul>
+              <li>Linear Classifier suffer from high bias</li>
+                 <ul style="list-style-type:circle">
+                    <li>Add more features --- increase dimensionality and slow</li>
+                </ul>
+              <li>Kernelize solve the high bias</li>
+              <li>Hyperparameter optimization</li>
+            </ul>
+          </p>
+
+          <h2>Kernelized SVM</h2>
+          <h3>Algorithm Steps</h3>
+         <!--  <p>Some text..</p>
+          <p>1. Regularizer control the complexity</p> -->
+         
+      </div>
+    </div>
+
+  </body>
+</html>
 

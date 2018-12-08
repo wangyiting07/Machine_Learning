@@ -82,6 +82,20 @@
           width: 100%;
           padding: 20px;
       }
+	  
+	  /* Table*/
+	  table, th, td {
+		  border: 1px solid black;
+		  border-collapse: collapse;
+		}
+		th, td {
+		  padding: 15px;
+		  text-align: left;
+		}
+		table#t01 {
+		  width: 100%;    
+		  background-color: #f1f1c1;
+		}
     </style>
   </head>
 
@@ -99,16 +113,19 @@
       <a href="file:///C:/Users/grace/Desktop/web/test-site/index.html#" class="right">Home</a>
     </div>
 
+	<!-- left colunm content-->
     <div class="row">
       <div class="side">
           <h2>Content</h2>
           <h4>Tips</h4>
-
+		  <h4>Summary</h4>
       </div>
+	  
+	  <!-- Main part of the website -->
       <div class="main">
-          <h2>Tips (index)</h2>
+	  <!-- First part-->
+          <h2>Tips</h2>
           <h4>Some practical tips</h4>
-          <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
           <p>
             <ul style="list-style-type:square">
               <li>Regularizer controls the model complexity</li>
@@ -123,7 +140,61 @@
               <li>Hyperparameter optimization</li>
             </ul>
           </p>
-
+		  
+		<!-- Second part-->
+		  <h2>Summary</h2>
+		  	<!-- Table of Aldorithm Assumption -->
+			<h3>Assumption</h3>
+			<h5> Why assumption is important? Becasue all algorithms are based on the assumption. You must make sure the assumption 
+			matches the pratical problem when cloosing the model </h5>
+			  <table style="width:100%">
+			  	<!-- first row-->
+				  <tr>
+				    <th>Algorithm </th>
+				    <th>Assumption</th> 
+				    <th>Type </th>
+				  </tr>
+				  <!-- second row-->
+				  <tr>
+				    <td>KNN</td>
+				    <td>Similar inputs have similar outputs</td>
+				    <td bgcolor="#d6f5f5">Classification or Regreesion ---- Both</td>
+				  </tr>
+				  <!-- third row-->
+				  <tr>
+				    <td>Perceptron</td>
+				    <td>Data is linearly separable</td>
+				    <td bgcolor="#ffcce6">Binary classification (y is in {1,-1}) ---- Classification</td>
+				  </tr>
+				  <!-- Forth row-->
+				  <tr>
+				    <td>Naive Bayes</td>
+				    <td>Given the label, feature values are independent </td>
+				    <td bgcolor="#ffcce6">Naive Bayes is a linear classifier (generative learning P(x|y)) ---- Classification</td>
+				  </tr>
+				   <!-- fifth row-->
+				  <tr>
+				    <td>Logistic Regression</td>
+				    <td>Model P(y|x) directly. We don't care about the model of P(x|y) any more because we estimate w,b with MLE or MAP
+					 to maximize P(y|x)</td>
+				    <td bgcolor="#ffcce6"> Classification  (discriminative P(y|x) counterpart of Naive Bayes )</td>
+				  </tr>
+				  <!-- sixth row-->
+				  <tr>
+				    <td>SVM</td>
+				    <td> Linear separately + Binary classification</td>
+				    <td bgcolor="#ffcce6"> Linear classifier</td>
+				  </tr>
+				    <!-- seventh row-->
+				  <tr>
+				    <td>Linear Regression</td>
+				    <td>Data is drawn from line w<sup>T</sup>x. For each data point with feature x<sub>i</sub>, the label is drawn from Gaussian distribution</td>
+				    <td bgcolor="#e6e6e6"> Regression</td>
+				  </tr>
+				</table>
+				<br>
+		  
+		  
           <h2>Kernelized SVM</h2>
           <h3>Algorithm Steps</h3>
          <!--  <p>Some text..</p>

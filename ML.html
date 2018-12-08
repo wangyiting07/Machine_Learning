@@ -175,8 +175,21 @@
 				   <!-- fifth row-->
 				  <tr>
 				    <td>Logistic Regression</td>
-				    <td>Given the label, feature values are independent</td>
+				    <td>Model P(y|x) directly. We don't care about the model of P(x|y) any more because we estimate w,b with MLE or MAP
+					 to maximize P(y|x)</td>
 				    <td bgcolor="#ffcce6"> Classification  (discriminative P(y|x) counterpart of Naive Bayes )</td>
+				  </tr>
+				  <!-- sixth row-->
+				  <tr>
+				    <td>SVM</td>
+				    <td> Linear separately + Binary classification</td>
+				    <td bgcolor="#ffcce6"> Linear classifier</td>
+				  </tr>
+				    <!-- seventh row-->
+				  <tr>
+				    <td>Linear Regression</td>
+				    <td>Data is drawn from line w<sup>T</sup>x. For each data point with feature x<sub>i</sub>, the label is drawn from Gaussian distribution</td>
+				    <td bgcolor="#e6e6e6"> Regression</td>
 				  </tr>
 				</table>
 				<br>

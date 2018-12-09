@@ -23,7 +23,7 @@
       .header h1 {
           font-size: 50px;
       }
-  
+
       /* Style the top navigation bar */
       .navbar {
           overflow: hidden;
@@ -53,7 +53,7 @@
           color: black;
       }
       /* Column container */
-      .row {  
+      .row {
           /*clear: both;*/
           display: inline-flex;
           /*flex-wrap: wrap;*/
@@ -67,10 +67,10 @@
           background-color: #f1f1f1;
           padding: 20px;
       }
-    
+
 
       /* Main column */
-      .main {   
+      .main {
           flex: 70%;
           background-color: white;
           padding: 20px;
@@ -82,7 +82,7 @@
           width: 100%;
           padding: 20px;
       }
-	  
+
 	  /* Table*/
 	  table, th, td {
 		  border: 1px solid black;
@@ -93,7 +93,7 @@
 		  text-align: left;
 		}
 		table#t01 {
-		  width: 100%;    
+		  width: 100%;
 		  background-color: #f1f1c1;
 		}
     </style>
@@ -120,7 +120,7 @@
           <h4>Tips</h4>
 		  <h4>Summary</h4>
       </div>
-	  
+
 	  <!-- Main part of the website -->
       <div class="main">
 	  <!-- First part-->
@@ -140,18 +140,18 @@
               <li>Hyperparameter optimization</li>
             </ul>
           </p>
-		  
+
 		<!-- Second part-->
 		  <h2>Summary</h2>
 		  	<!-- Table of Aldorithm Assumption -->
 			<h3>Assumption</h3>
-			<h5> Why assumption is important? Becasue all algorithms are based on the assumption. You must make sure the assumption 
+			<h5> Why assumption is important? Becasue all algorithms are based on the assumption. You must make sure the assumption
 			matches the pratical problem when cloosing the model </h5>
 			  <table style="width:100%">
 			  	<!-- first row-->
 				  <tr>
 				    <th>Algorithm </th>
-				    <th>Assumption</th> 
+				    <th>Assumption</th>
 				    <th>Type </th>
 				  </tr>
 				  <!-- second row-->
@@ -191,18 +191,24 @@
 				    <td>Data is drawn from line w<sup>T</sup>x. For each data point with feature x<sub>i</sub>, the label is drawn from Gaussian distribution</td>
 				    <td bgcolor="#e6e6e6"> Regression</td>
 				  </tr>
+
+          <!-- eighth row-->
+        <tr>
+          <td>Gaussian Process Regression</td>
+          <td>Data is all Gaussian distribution (Put the kernel matrix into Gaussian distribution)</td>
+          <td bgcolor="#e6e6e6">Regression gives both prediction and certainty</td>
+        </tr>
 				</table>
 				<br>
-		  
-		  
+
+
           <h2>Kernelized SVM</h2>
           <h3>Algorithm Steps</h3>
          <!--  <p>Some text..</p>
           <p>1. Regularizer control the complexity</p> -->
-         
+
       </div>
     </div>
 
   </body>
 </html>
-
